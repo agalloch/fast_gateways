@@ -1,0 +1,2 @@
+POST http://localhost:9292/tokens
+Content-Type: application/json
