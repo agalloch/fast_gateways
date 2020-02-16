@@ -4,9 +4,11 @@ module MySite
     default_error_formatter :json
 
     post 'tokens' do
-      name = params[:foo]
+      who        = params[:foo]
+      what       = params[:foo]
+      slim_shady = params[:slim_shady]
 
-      present :data, "Hello, #{name}"
+      present :data, "Hello, my name is #{what}. my name is #{who}, my names is #{slim_shady}"
       present :status, 'Success'
     end
 
