@@ -9,5 +9,9 @@ module MySite
       present :data, "Hello, #{name}"
       present :status, 'Success'
     end
+
+    get 'tokens/:id' do
+      who_cares status: :ok
+    end
   end
 end
